@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +23,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Title';
+  src: url('/public/fonts/ABITE.ttf') format('ttf');
+  width: 300;
+}
+
+@theme{
+  --font-Title: 'Title',sans-serif; 
 }
